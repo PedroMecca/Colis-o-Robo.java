@@ -24,5 +24,13 @@ public class CalculoColisaoTest {
     public void testeExemplo4() {
         assertEquals("(3, -3)", CalculoColisao.calcularPontoColisao(0, 0, 0, 135, 4));
     }
+    @Test
+    public void testeFeixeInvalido() {
+        assertEquals("Erro", CalculoColisao.calcularPontoColisao(0, 0, 0, 200, 4));
+    }
 
+    @Test
+    public void testeDistanciaNegativa() {
+        assertEquals("Erro", CalculoColisao.calcularPontoColisao(0, 0, 0, 135, -1));
+    }
 }
