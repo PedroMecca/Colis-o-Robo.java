@@ -11,14 +11,13 @@ public class CalculoColisao {
         double aRad = Math.toRadians(a);  // Ângulo de orientação do robô
         double fRad = Math.toRadians(f - 90);  // Ângulo do feixe
 
-        // Calculando o ângulo total do feixe
         double anguloTotal = aRad + fRad;
 
-        // Calculando as coordenadas cartesianas do ponto de colisão
+
         double x2 = x1 + d * cos(anguloTotal);
         double y2 = y1 + d * sin(anguloTotal);
 
-        // Arredondando para o inteiro mais próximo
+
         int xFinal = (int) Math.round(x2);
         int yFinal = (int) Math.round(y2);
 
