@@ -15,7 +15,7 @@ public class CalculoColisao {
         double anguloTotal = aRad + fRad;
 
         // Calculando as coordenadas cartesianas do ponto de colisão
-        double x2 = x1 + d * cogits(anguloTotal);
+        double x2 = x1 + d * cos(anguloTotal);
         double y2 = y1 + d * sin(anguloTotal);
 
         // Arredondando para o inteiro mais próximo
